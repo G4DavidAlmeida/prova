@@ -1,0 +1,29 @@
+[project]
+name = "fastapi-nosql-demo"
+version = "0.1.0"
+description = "FastAPI demo with Redis, MongoDB, Cassandra and Neo4j"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.115.0",
+    "uvicorn[standard]>=0.30.0",
+    "requests>=2.32.0",
+    "redis>=5.2.0",
+    "pymongo>=4.10.0",
+    "cassandra-driver>=3.29.0",
+    "neo4j>=5.28.0",
+    "faker>=30.8.0",
+    "pydantic-settings>=2.7.0",
+    "python-dotenv>=1.0.1",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3.0",
+    "httpx>=0.28.0",
+]
+
+[tool.pytest.ini_options]
+addopts = "-ra"
+testpaths = ["tests"]
+pythonpath = ["."]

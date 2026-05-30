@@ -26,7 +26,7 @@ A API utilizada e a de mercado tradicional da AwesomeAPI:
 ## Requisitos
 
 - Python 3.11+
-- uv
+- uv - https://docs.astral.sh/uv/getting-started/installation/
 - Docker + Docker Compose
 
 ## Subir bancos
@@ -55,7 +55,7 @@ uv pip install -r requirements.txt
 uv run uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
 ```
 
-Swagger:
+Swagger e teste da api:
 
 - http://localhost:8000/docs
 
